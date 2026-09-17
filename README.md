@@ -1,6 +1,6 @@
-# STM32H755 CNC Firmware
+# SMS CNC Control System - STM32H755 Firmware
 
-Firmware for a prototype CNC controller based on the dual-core STM32H755 microcontroller.
+Firmware for **SMS CNC Control System**, a prototype CNC controller developed under **Surowiecki Motion Labs** and based on the dual-core STM32H755 microcontroller.
 The project separates high-level command handling from real-time motion execution:
 
 - Cortex-M7 handles USB CDC communication, text commands, G-code parsing, program buffering, modal machine state and IPC command generation.
@@ -97,9 +97,7 @@ Both Cortex-M7 and Cortex-M4 targets must be built and flashed.
 
 This firmware is designed to work with the Qt desktop HMI repository:
 
-```text
-qt-cnc-hmi
-```
+[qt-cnc-hmi](https://github.com/Surowiecki-Motion-Labs/qt-cnc-hmi)
 
 ## Status
 
