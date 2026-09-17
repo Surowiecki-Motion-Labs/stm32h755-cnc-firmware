@@ -1,0 +1,33 @@
+# STM32CubeIDE / Eclipse
+.settings/
+.metadata/
+RemoteSystemsTempFiles/
+
+# Build outputs
+Debug/
+Release/
+build/
+cmake-build-*/
+
+# Object and dependency files
+*.o
+*.obj
+*.d
+*.su
+*.cyclo
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# Backups and temporary files
+*~
+*.bak
+*.tmp
+*.autosave
+
+# Local debug notes / exported archives
+Old_memoryFiles/
+jakOdpalacDebug
+*.zip

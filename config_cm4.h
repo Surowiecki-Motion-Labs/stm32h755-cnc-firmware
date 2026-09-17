@@ -1,0 +1,49 @@
+#ifndef CONFIG_CM4_H_
+#define CONFIG_CM4_H_
+
+#define X_HOME_OFFSET_UM      0
+#define Y_HOME_OFFSET_UM      0
+#define Z_HOME_OFFSET_UM      0
+
+#define X_DEFAULT_DIR         1U
+#define Y_DEFAULT_DIR         1U
+#define Z_DEFAULT_DIR         1U
+
+
+#define STEPGEN_TIMER_BASE_HZ      1000000UL
+#define STEP_PULSE_WIDTH_US        10U
+#define STEPGEN_DEFAULT_FEED_HZ    200U
+#define STEPGEN_ENABLE_SETTLE_MS   500U
+#define STEPGEN_DIR_SETUP_MS       2U
+#define STEPGEN_ENABLE_IDLE_TIMEOUT_MS  60000U
+
+#define STEPGEN_ENABLE_ACTIVE_STATE    GPIO_PIN_RESET
+#define STEPGEN_ENABLE_INACTIVE_STATE  GPIO_PIN_SET
+#define STEPGEN_DIR_POSITIVE_STATE     GPIO_PIN_SET
+#define STEPGEN_DIR_NEGATIVE_STATE     GPIO_PIN_RESET
+#define STEPGEN_STEP_ACTIVE_STATE      GPIO_PIN_SET
+#define STEPGEN_STEP_INACTIVE_STATE    GPIO_PIN_RESET
+
+#define X_STEP_PORT    X_STEP_GPIO_Port
+#define X_STEP_PIN     X_STEP_Pin
+#define X_DIR_PORT     X_DIR_GPIO_Port
+#define X_DIR_PIN      X_DIR_Pin
+
+#define Y_STEP_PORT    Y_STEP_GPIO_Port
+#define Y_STEP_PIN     Y_STEP_Pin
+#define Y_DIR_PORT     Y_DIR_GPIO_Port
+#define Y_DIR_PIN      Y_DIR_Pin
+
+#define Z_STEP_PORT    Z_STEP_GPIO_Port
+#define Z_STEP_PIN     Z_STEP_Pin
+#define Z_DIR_PORT     Z_DIR_GPIO_Port
+#define Z_DIR_PIN      Z_DIR_Pin
+
+#define AXIS_ENABLE_PORT   ENA_GPIO_Port
+#define AXIS_ENABLE_PIN    ENA_Pin
+
+#define SPINDLE_RPM_MIN             1000
+#define SPINDLE_RPM_MAX             20000
+#define SPINDLE_DEFAULT_DIR_CW      1U
+
+#endif /* CONFIG_CM4_H_ */
